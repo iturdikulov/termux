@@ -40,3 +40,13 @@ pkg install rustc-nightly
 for i in "evcxr_repl"; do
    cargo install $i
 done
+
+
+path_update="
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export RUSTNIGHTLY_PATH=/data/data/com.termux/files/usr/opt/rustc-nightly
+export PATH=$PATH:$RUSTNIGHTLY_PATH/bin
+"
+
+printf "Add\n$path_update\ninto your ~/.bashrc file"
