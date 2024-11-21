@@ -37,6 +37,6 @@ go install github.com/x-motemen/gore/cmd/gore@latest
 pkg install tur-repo -y
 pkg update
 pkg install rustc-nightly
-for i in "evcxr_repl"
+for i in "evcxr_repl"; do
    cargo install $i
 done
