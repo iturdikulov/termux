@@ -21,7 +21,7 @@ for each_pac in "wget" "net-tools" "mlocate"\
 done
 
 # Install Python packages
-for i in "setuptools" "requests" "ipython" "cryptography"; do
+for i in "ipython"; do
     pip3 install $i
 done
 
@@ -34,7 +34,7 @@ done
 go install github.com/x-motemen/gore/cmd/gore@latest
 
 # Install Rust toolchain with packages
-pkg install tur-repo
+pkg install tur-repo -y
 pkg update
 pkg install rustc-nightly
 for i in "evcxr_repl"
