@@ -15,6 +15,7 @@ for each_pac in "wget" "net-tools" "mlocate"\
                 "unzip" "tree" "git" \
                 "cmatrix" "htop" "neovim" \
                 "golang" "nodejs" "python" \
+                "bat" "fd" "eza" \
                 "npm" "ruby" \
                 "ruby" "curl"; do
     pkg install $each_pac -y
@@ -37,7 +38,7 @@ go install github.com/x-motemen/gore/cmd/gore@latest
 pkg install tur-repo -y
 pkg update
 pkg install rustc-nightly
-for i in "evcxr_repl"; do
+for i in "evcxr_repl" "ttyper"; do
    cargo install $i
 done
 
